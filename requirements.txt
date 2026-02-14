@@ -1,23 +1,21 @@
-# Core Web and Server
+# Web Server
 Flask==3.1.2
 gunicorn==25.1.0
-Werkzeug==3.1.5
 
-# Data Science & NLP
-numpy>=2.0.0
-pandas>=3.0.0
-scikit-learn==1.8.0
-scipy==1.17.0
+# NLP and Models
 spacy==3.8.11
-# Download model via URL or via spacy download command
-https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl
+en_core_web_lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl
 
-# Visualization
-matplotlib==3.10.8
+# Data Science
+numpy==2.2.0
+pandas==2.2.3
+scikit-learn==1.6.1
+scipy==1.15.1
+matplotlib==3.10.0
 seaborn==0.13.2
 
-# PDF and Utils
+# Utilities
+pydantic>=2.0
 PyPDF2==3.0.1
-pydantic>=2.0.0
-requests==2.32.5
-nltk==3.9.2
+requests==2.32.3
+nltk==3.9.1
