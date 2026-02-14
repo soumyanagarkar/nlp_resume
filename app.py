@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import spacy
 
 app = Flask(__name__)
-nlp = spacy.load("en_core_web_lg")
+nlp = spacy.load("en_core_web_sm")
 
 def clean_function(text):
     text = text.lower()
@@ -49,3 +49,4 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=True , use_reloader=True)
+
